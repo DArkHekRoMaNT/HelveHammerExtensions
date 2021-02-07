@@ -1,0 +1,74 @@
+[
+  {
+    "file": "game:itemtypes/toolhead/axehead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/hammerhead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/hoehead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/knifeblade.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/longblade.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/pickaxehead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/prospectingpickhead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/sawblade.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/scythehead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/shovelhead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/spearhead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
+    "file": "game:itemtypes/toolhead/*",
+    "op": "add",
+    "path": "/attributes/helvehammerworkable",
+    "value": true
+  }
+]
