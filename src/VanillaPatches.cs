@@ -10,7 +10,7 @@ namespace HelveHammerExtensions
         public const string patchCode = "DArkHekRoMaNT.ModSystem.VanillaPatches";
         public Harmony harmonyInstance = new Harmony(patchCode);
 
-        public override void StartServerSide(ICoreServerAPI api)
+        public override void Start(ICoreAPI api)
         {
             harmonyInstance.PatchAll();
             StringBuilder builder = new StringBuilder("Harmony Patched Methods: ");
