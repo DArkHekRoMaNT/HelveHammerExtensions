@@ -1,6 +1,6 @@
 [
   {
-    "file": "game:blocktypes/metal/anvil.json",
+    "file": "game:blocktypes/metal/anvilpart.json",
     "op": "add",
     "path": "/attributes/helvehammerworkable",
     "value": false
