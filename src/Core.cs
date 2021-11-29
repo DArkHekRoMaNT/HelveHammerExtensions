@@ -1,3 +1,4 @@
+using System;
 using SharedUtils;
 using SharedUtils.Extensions;
 using Vintagestory.API.Common;
@@ -15,7 +16,14 @@ namespace HelveHammerExtensions
         }
         public override void Dispose()
         {
-            api.StoreModConfig<Config>(Config.Current, ConstantsCore.ModId + ".json");
+            try
+            {
+                api.StoreModConfig(Config.Current, ConstantsCore.ModId + ".json");
+            }
+            catch (Exception e)
+            {
+                api.Logger.ModError(e.ToString());
+            }
         }
     }
 }
