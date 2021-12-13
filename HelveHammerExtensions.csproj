@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
-    <VSVersion>1.15.0</VSVersion>
+    <VSVersion>1.16.0-pre.8</VSVersion>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <Reference Include="VintagestoryAPI">
       <HintPath>$(VINTAGE_STORY)/$(VSVersion)/VintagestoryAPI.dll</HintPath>
@@ -24,7 +24,7 @@
       <HintPath>$(VINTAGE_STORY)/$(VSVersion)/Lib/cairo-sharp.dll</HintPath>
     </Reference>
   </ItemGroup>
-  
+
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   </ItemGroup>
