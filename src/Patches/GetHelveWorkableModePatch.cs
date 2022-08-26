@@ -3,14 +3,18 @@ using Vintagestory.GameContent;
 
 namespace HelveHammerExtensions
 {
-
     [HarmonyPatch(typeof(ItemWorkItem))]
-    [HarmonyPatch(nameof(ItemWorkItem.GetHelveWorkableMode))]
+    [HarmonyPatch("GetHelveWorkableMode")]
     public class GetHelveWorkableModePatch
     {
         public static bool Prefix(ItemWorkItem __instance, ref EnumHelveWorkableMode __result, ref BlockEntityAnvil beAnvil)
         {
-            bool workable = beAnvil.SelectedRecipe.Output.Attributes?["helvehammerworkable"]?.AsBool() ?? Config.Current.DefaultWorkable;
+            bool workable = Config.Current.DefaultWorkable;
+            var attr = beAnvil.SelectedRecipe.Output.Attributes;
+            if (attr != null)
+            {
+                workable = attr["helvehammerworkable"].AsBool();
+            }
 
             if ((workable || Config.Current.AllWorkable) && beAnvil.OwnMetalTier >= Config.Current.AnvilTier)
             {

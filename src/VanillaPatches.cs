@@ -18,7 +18,7 @@ namespace HelveHammerExtensions
             {
                 builder.Append(val.Name + ", ");
             }
-            api.Logger.Notification(builder.ToString());
+            Mod.Logger.Notification(builder.ToString());
         }
 
         public override void Dispose()

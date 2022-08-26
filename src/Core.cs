@@ -1,28 +1,35 @@
 using System;
-using SharedUtils;
-using SharedUtils.Extensions;
 using Vintagestory.API.Common;
 
 namespace HelveHammerExtensions
 {
     public class Core : ModSystem
     {
-        ICoreAPI api;
+        public static string ModId { get; private set; }
+        public static ILogger ModLogger { get; private set; }
+
+        private ICoreAPI _api;
+
+        public override void StartPre(ICoreAPI api)
+        {
+            ModLogger = Mod.Logger;
+        }
+
         public override void Start(ICoreAPI api)
         {
-            this.api = api;
-
-            Config.Current = api.LoadOrCreateConfig<Config>(ConstantsCore.ModId + ".json");
+            _api = api;
+            Config.Current = api.LoadOrCreateConfig<Config>(Mod.Info.ModID + ".json");
         }
+
         public override void Dispose()
         {
             try
             {
-                api.StoreModConfig(Config.Current, ConstantsCore.ModId + ".json");
+                _api.StoreModConfig(Config.Current, Mod.Info.ModID + ".json");
             }
             catch (Exception e)
             {
-                api.Logger.ModError(e.ToString());
+                Mod.Logger.Error(e.ToString());
             }
         }
     }

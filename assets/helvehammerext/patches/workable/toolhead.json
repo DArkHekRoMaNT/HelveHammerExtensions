@@ -66,6 +66,12 @@
     "value": {}
   },
   {
+    "file": "game:itemtypes/toolhead/bladehead.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {}
+  },
+  {
     "file": "game:itemtypes/toolhead/*",
     "op": "add",
     "path": "/attributes/helvehammerworkable",
