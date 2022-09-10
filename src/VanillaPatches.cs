@@ -1,6 +1,5 @@
 using Vintagestory.API.Common;
 using HarmonyLib;
-using Vintagestory.API.Server;
 using System.Text;
 
 namespace HelveHammerExtensions
