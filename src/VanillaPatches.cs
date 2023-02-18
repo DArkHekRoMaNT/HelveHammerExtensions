@@ -6,7 +6,7 @@ namespace HelveHammerExtensions
 {
     class VanillaPatches : ModSystem
     {
-        public const string patchCode = "DArkHekRoMaNT.ModSystem.VanillaPatches";
+        public const string patchCode = "DArkHekRoMaNT.HelveHammerExtensions.VanillaPatches";
         public Harmony harmonyInstance = new Harmony(patchCode);
 
         public override void Start(ICoreAPI api)
