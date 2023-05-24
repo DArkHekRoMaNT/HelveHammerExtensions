@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:itemtypes/tool/cleaver.json",
+    "op": "add",
+    "path": "/attributes/helvehammerworkable",
+    "value": true
+  }
+]
