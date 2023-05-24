@@ -9,9 +9,9 @@ namespace HelveHammerExtensions
         public bool AllWorkable { get; set; } = false;
 
         [Description("Default behavior")]
-        public bool DefaultWorkable { get; set; }
+        public bool DefaultWorkable { get; set; } = true;
 
         [Description("Minimum anvil tier (1 - copper, 2 - bronze, 3 - iron, 4 - steel in vanilla)")]
-        public int AnvilTier { get; set; }
+        public int AnvilTier { get; set; } = 3;
     }
 }
