@@ -2,16 +2,16 @@
 	<PropertyGroup>
 		<Name>Helve Hammer Extensions</Name>
 		<ModId>helvehammerext</ModId>
-		<Version>1.5.2</Version>
+		<Version>1.6.0</Version>
 		<Authors>DArkHekRoMaNT</Authors>
-		<MinimalGameVersion>1.18.8</MinimalGameVersion>
-		<GameVersion>1.18.15</GameVersion>
+		<MinimalGameVersion>1.19.0-rc.5</MinimalGameVersion>
+		<GameVersion>1.19.0-rc.5</GameVersion>
 		<Description>Automatic forging for most things!</Description>
 		<NoLang>true</NoLang>
 	</PropertyGroup>
 	<ItemGroup>
 		<Dependencies Include="commonlib">
-			<Version>2.2.0</Version>
+			<Version>2.3.0</Version>
 		</Dependencies>
 
 		<IncludeFiles Include="modicon.png" />
