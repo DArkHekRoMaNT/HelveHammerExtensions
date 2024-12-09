@@ -4,12 +4,12 @@ using Vintagestory.GameContent;
 namespace HelveHammerExtensions
 {
     [HarmonyPatch(typeof(ItemWorkItem))]
-    [HarmonyPatch("GetHelveWorkableMode")]
-    public class GetHelveWorkableModePatch
+    [HarmonyPatch(nameof(ItemWorkItem.GetHelveWorkableMode))]
+    public class Patch_ItemWorkItem_GetHelveWorkableMode
     {
         public static bool Prefix(ref EnumHelveWorkableMode __result, ref BlockEntityAnvil beAnvil)
         {
-            bool workable = Core.Config.DefaultWorkable;
+            var workable = Core.Config.DefaultWorkable;
             var attr = beAnvil.SelectedRecipe.Output.Attributes;
             if (attr != null)
             {

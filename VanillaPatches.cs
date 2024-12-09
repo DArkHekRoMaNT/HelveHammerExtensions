@@ -4,15 +4,15 @@ using System.Text;
 
 namespace HelveHammerExtensions
 {
-    class VanillaPatches : ModSystem
+    public class VanillaPatches : ModSystem
     {
         public const string patchCode = "DArkHekRoMaNT.HelveHammerExtensions.VanillaPatches";
-        public Harmony harmonyInstance = new Harmony(patchCode);
+        public Harmony harmonyInstance = new(patchCode);
 
         public override void Start(ICoreAPI api)
         {
             harmonyInstance.PatchAll();
-            StringBuilder builder = new StringBuilder("Harmony Patched Methods: ");
+            var builder = new StringBuilder("Harmony Patched Methods: ");
             foreach (var val in harmonyInstance.GetPatchedMethods())
             {
                 builder.Append(val.Name + ", ");

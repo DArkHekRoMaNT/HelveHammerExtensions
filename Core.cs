@@ -1,5 +1,4 @@
 using CommonLib.Config;
-using System;
 using Vintagestory.API.Common;
 
 namespace HelveHammerExtensions
